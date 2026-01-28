@@ -459,11 +459,12 @@ calculateButton.addEventListener("click", function () {
   const totalcost1 = invoiceValue + tax + Insurance + 250 ; 
 
   // Display result
-  resultElement.innerHTML = "Total cost (Invoice Value & Customs Celereance  Rate & Insurance  ) : " + totalcost1+" JOD" + "<br>" + description + "<br>"+" (need to be held at customs from 1-14 days for approvals)";
+  resultElement.innerHTML = "Total cost (Invoice Value&Customs Celereance&Insurance  ) : " + totalcost1+" JOD" + "<br>" + description + "<br>"+" (need to be held at customs from 1-14 days for approvals)";
 });
 totalCost.toFixed(2)
 // Initialize description on page load
 selectElement.dispatchEvent(new Event("change"));
+
 
 
 
